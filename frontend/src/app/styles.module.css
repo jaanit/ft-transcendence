@@ -1,0 +1,55 @@
+.notch {
+  position: relative;
+  background-color: #000000;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 2.5;
+  /* border: rgb(190, 177, 177) solid; */
+}
+
+.notch:before {
+  position: absolute;
+  content: "";
+  border-right: 15px solid transparent;
+  /* border-left: 20px solid transparent; */
+  width: 55%;
+  height: 5px;
+  left: 0;
+}
+
+.notch:before {
+  border-bottom: 30px solid #000000;
+  top: -29px;
+}
+
+.notch_button {
+  position: relative;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 2.5;
+  height: 0px;
+  /* border: rgb(190, 177, 177) solid; */
+}
+
+.notch_button:before,
+.notch_button::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+}
+
+.notch_button::after {
+  border-left: 40px solid transparent;
+  border-top: 28px solid #fff;
+  bottom: -28px;
+}
+
+.notch_button:before {
+  border-right: 40px solid transparent;
+  border-bottom: 29px solid #fff;
+  top: -28px;
+}
+
